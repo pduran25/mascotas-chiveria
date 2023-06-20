@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import sound from './assets/sonido.mp3';
+import sound from './assets/chiverito.mp3';
 import React, { useState } from 'react';
 
 
@@ -21,8 +21,10 @@ function App() {
 
  
   
-
+if(codigo == "chiverito"){
   source = "./assets/chiverito.glb"
+}
+  
 
   return (
     <div className="App">
