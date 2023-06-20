@@ -1,27 +1,46 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import styled from 'styled-components';
+import sound from './assets/sonido.mp3';
+import React, { useState } from 'react';
+
 
 import './App.css'
 
 
 function App() {
-  const [count, setCount] = useState(0)
   const search = window.location.search;
   const params = new URLSearchParams(search);
   const codigo = params.get('mascota');
   console.log("mascota numero: "+codigo);
   var source = "";
+  const [mostrarDiv, setMostrarDiv] = useState(true);
 
-  source = "./assets/animacionpreg.glb"
+  function play(){
+    new Audio(sound).play();
+    setMostrarDiv(false);
+  }
+
+ 
+  
+
+  source = "./assets/chiverito.glb"
 
   return (
     <div className="App">
-       <model-viewer src={source} autoplay ar ar-modes="webxr scene-viewer quick-look" camera-controls touch-action="pan-y" camera-orbit="0deg 80deg 0m" alt="A 3D model of some wall art">
+     
+
+<model-viewer src={source} ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" autoplay>
+{mostrarDiv ? (<div id="color-controls">
+          <button data-color="#ff0000" onClick={play}>SONIDO</button>
+        </div>): (<div id="color-controls">
+        
+        </div>)}
+       
         <Boton slot="ar-button">
           🎉 RA 🎉
         </Boton>
-      </model-viewer>
+
+        
+  </model-viewer>
     </div>
   )
 }
@@ -39,4 +58,4 @@ font-size: 16px;
 
 `;
 
-export default App
+export default App;
