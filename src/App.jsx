@@ -21,8 +21,8 @@ function App() {
 
   
 if(codigo == "chiverito"){
-  source = "./assets/chiverito.glb"
-  source2 = "./assets/chiverito.usdz"
+  source = "./assets/chiverito1.glb"
+  source2 = "./assets/chiverito1.usdz"
 }
 
 const toggleAudio = () => {
@@ -40,7 +40,7 @@ const toggleAudio = () => {
 
   return (
     <div className="App">
-<model-viewer src={source} ios-src={source2} ar ar-modes="webxr scene-viewer quick-look" ar-scale="auto" camera-controls camera-target="0m 0m 0m" autoplay>
+<model-viewer src={source} ios-src={source2}  ar-scale="auto" touch-action="pan-y" shadow-intensity="0" camera-controls camera-orbit="-50deg 70deg 200m" camera-target="0 0 0" ar ar-modes="webxr scene-viewer quick-look" autoplay>
 
         <SoundButton
         src={isAudioPlaying ? './assets/audio.png' : './assets/sinaudio.png'}
