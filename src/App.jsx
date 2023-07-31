@@ -10,20 +10,37 @@ function App() {
   const search = window.location.search;
   const params = new URLSearchParams(search);
   const codigo = params.get('mascota');
+  var valtipo = params.get('prueba');
   console.log("mascota numero: "+codigo);
   var source = "";
   var source2 = "";
+  var imagen = "";
   const [isAudioPlaying, setIsAudioPlaying] = useState(false);
 
 
-
+  valtipo = (valtipo === null || valtipo === undefined)?0:valtipo;
   
 
+
   
-if(codigo == "chiverito"){
-  source = "./assets/chiverito1.glb"
-  source2 = "./assets/chiverito1.usdz"
+if(codigo == "manolo"){
+  source = "./assets/chiverito/chiverito1.glb"
+  source2 = "./assets/chiverito/chiverito1.usdz"
+}else if(codigo == "firulais"){
+  source = "./assets/batman/batman1.glb"
+  source2 = "./assets/batman/batman2.usdz"
+}else if(codigo == "chiverito"){
+  source = "./assets/golden/golden.glb"
+  source2 = "./assets/golden/golden.usdz"
+}else if(codigo == "marley"){
+  source = "./assets/peluza/peluza.glb"
+  source2 = "./assets/peluza/peluza.usdz"
+}else if(codigo == "dulce"){
+  source = "./assets/simba/simba.glb"
+  source2 = "./assets/simba/simba.usdz"
 }
+
+imagen = "./assets/provisional.png"
 
 const toggleAudio = () => {
   const audioElement = document.getElementById('myAudio');
@@ -37,10 +54,24 @@ const toggleAudio = () => {
   setIsAudioPlaying(!isAudioPlaying);
 };
 
+const containerStyle = {
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+  height: '100vh',
+};
 
-  return (
-    <div className="App">
-<model-viewer src={source} ios-src={source2}  ar-scale="auto" touch-action="pan-y" shadow-intensity="0" camera-controls camera-orbit="-50deg 70deg 200m" camera-target="0 0 0" ar ar-modes="webxr scene-viewer quick-look" autoplay>
+const imageStyle = {
+  maxWidth: '100%',
+  maxHeight: '100%',
+};
+
+
+  return ((valtipo != 1)?(<div style={containerStyle}>
+    <img src={imagen} alt="Muy Pronto en Chivería" style={imageStyle} />
+  </div>):
+    (<div className="App">
+<model-viewer src={source} ios-src={source2} camera-controls camera-orbit="-40deg 70deg 200m" camera-target="0 0 0" ar ar-modes="scene-viewer webxr" autoplay>
 
         <SoundButton
         src={isAudioPlaying ? './assets/audio.png' : './assets/sinaudio.png'}
@@ -51,14 +82,14 @@ const toggleAudio = () => {
       <audio id="myAudio" src={sound} />
 
 
-        <Boton slot="ar-button">
+        <Boton slot="ar-button" >
           Click Aquí
         </Boton>
 
 
         
   </model-viewer>
-    </div>
+    </div>)
   )
 }
 
