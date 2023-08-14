@@ -25,10 +25,10 @@ function App() {
   
 if(codigo == "manolo"){
   source = "./assets/chiverito/chiverito1.glb"
-  source2 = "./assets/chiverito/chiverito1.usdz"
+  source2 = "./assets/chiverito/chiveritop18.usdz"
 }else if(codigo == "firulais"){
-  source = "./assets/batman/batman1.glb"
-  source2 = "./assets/batman/batman2.usdz"
+  source = "./assets/batman/batmanp3.glb"
+  source2 = "./assets/batman/batmanp11.usdz"
 }else if(codigo == "chiverito"){
   source = "./assets/golden/golden.glb"
   source2 = "./assets/golden/golden.usdz"
@@ -71,7 +71,7 @@ const imageStyle = {
     <img src={imagen} alt="Muy Pronto en Chivería" style={imageStyle} />
   </div>):
     (<div className="App">
-<model-viewer src={source} ios-src={source2} camera-controls camera-orbit="-40deg 70deg 200m" camera-target="0 0 0" ar ar-modes="scene-viewer webxr" autoplay>
+<model-viewer src={source} ios-src={source2} camera-controls camera-orbit="-40deg 70deg 200m" camera-target="0 0 0" ar ar-modes="scene-viewer webxr quick-look" xr-environment ar-placement="wall" autoplay>
 
         <SoundButton
         src={isAudioPlaying ? './assets/audio.png' : './assets/sinaudio.png'}
