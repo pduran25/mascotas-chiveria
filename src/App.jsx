@@ -79,7 +79,7 @@ const imageStyle = {
         onClick={toggleAudio}
       />
 
-      <audio id="myAudio" src={sound} />
+      <audio id="myAudio" src={sound} loop/>
 
 
         <Boton slot="ar-button" >
