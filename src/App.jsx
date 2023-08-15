@@ -27,8 +27,8 @@ if(codigo == "manolo"){
   source = "./assets/chiverito/chiverito1.glb"
   source2 = "./assets/chiverito/chiveritop18.usdz"
 }else if(codigo == "firulais"){
-  source = "./assets/batman/batmanp3.glb"
-  source2 = "./assets/batman/batmanp11.usdz"
+  source = "./assets/batman/batmanandroid1.glb"
+  source2 = "./assets/batman/batmanios1.usdz"
 }else if(codigo == "chiverito"){
   source = "./assets/golden/golden.glb"
   source2 = "./assets/golden/golden.usdz"
