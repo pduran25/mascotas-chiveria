@@ -24,8 +24,8 @@ function App() {
 
   
 if(codigo == "manolo"){
-  source = "./assets/chiverito/chiverito1.glb"
-  source2 = "./assets/chiverito/chiveritop18.usdz"
+  source = "./assets/chiverito/chiveritop1.glb"
+  source2 = "./assets/chiverito/chiveritop1.usdz"
 }else if(codigo == "firulais"){
   source = "./assets/batman/batmanandroid1.glb"
   source2 = "./assets/batman/batmanios1.usdz"
