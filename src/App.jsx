@@ -22,22 +22,50 @@ function App() {
   
 
 
+
   
 if(codigo == "manolo"){
-  source = "./assets/chiverito/chiveritop1.glb"
-  source2 = "./assets/chiverito/chiveritop1.usdz"
+  source = "./assets/chiverito/chiveritoandroid.glb"
+  source2 = "./assets/chiverito/chiveritop2.usdz"
 }else if(codigo == "firulais"){
   source = "./assets/batman/batmanandroid1.glb"
   source2 = "./assets/batman/batmanios1.usdz"
 }else if(codigo == "chiverito"){
-  source = "./assets/golden/golden.glb"
-  source2 = "./assets/golden/golden.usdz"
+  source = "./assets/golden/goldenp1.glb"
+  source2 = "./assets/golden/goldenp1.usdz"
 }else if(codigo == "marley"){
   source = "./assets/peluza/peluza.glb"
   source2 = "./assets/peluza/peluza.usdz"
 }else if(codigo == "dulce"){
   source = "./assets/simba/simba.glb"
   source2 = "./assets/simba/simba.usdz"
+}else if(codigo == "peluza"){
+  source = "./assets/marley/Marley.glb"
+  source2 = "./assets/marley/Marley.usdz"
+}else if(codigo == "botas"){
+  source = "./assets/dracula/dracula.glb"
+  source2 = "./assets/dracula/dracula.usdz"
+}else if(codigo == "simba"){
+  source = "./assets/dulce/dulce.glb"
+  source2 = "./assets/dulce/dulce.usdz"
+}else if(codigo == "coco"){
+  source = "./assets/dante/dante.glb"
+  source2 = "./assets/dante/dante.usdz"
+}else if(codigo == "lulu"){
+  source = "./assets/barbie/barbie.glb"
+  source2 = "./assets/barbie/barbie.usdz"
+}else if(codigo == "kira"){
+  source = "./assets/reina/reina.glb"
+  source2 = "./assets/reina/reina.usdz"
+}else if(codigo == "mila"){
+  source = "./assets/nina/nina.glb"
+  source2 = "./assets/nina/nina.usdz"
+}else if(codigo == "nina"){
+  source = "./assets/mila/mila_n2.glb"
+  source2 = "./assets/mila/mila_n2.usdz"
+}else if(codigo == "barbie"){
+  source = "./assets/lulu/lulu.glb"
+  source2 = "./assets/lulu/lulu.usdz"
 }
 
 imagen = "./assets/provisional.png"
