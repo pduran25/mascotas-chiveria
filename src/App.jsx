@@ -25,14 +25,14 @@ function App() {
 
   
 if(codigo == "manolo"){
-  source = "./assets/chiverito/chiveritoandroid.glb"
-  source2 = "./assets/chiverito/chiveritop2.usdz"
+  source = "./assets/chiverito/chivp3.glb"
+  source2 = "./assets/chiverito/chivp3.usdz"
 }else if(codigo == "firulais"){
   source = "./assets/batman/batmanandroid1.glb"
   source2 = "./assets/batman/batmanios1.usdz"
 }else if(codigo == "chiverito"){
-  source = "./assets/golden/goldenp1.glb"
-  source2 = "./assets/golden/goldenp1.usdz"
+  source = "./assets/golden/golden1.glb"
+  source2 = "./assets/golden/golden1.usdz"
 }else if(codigo == "marley"){
   source = "./assets/peluza/peluza.glb"
   source2 = "./assets/peluza/peluza.usdz"
@@ -66,6 +66,24 @@ if(codigo == "manolo"){
 }else if(codigo == "barbie"){
   source = "./assets/lulu/lulu.glb"
   source2 = "./assets/lulu/lulu.usdz"
+}else if(codigo == "dante"){
+  source = "./assets/coco/coco.glb"
+  source2 = "./assets/coco/coco.usdz"
+}else if(codigo == "batman"){
+  source = "./assets/firulais/firulais1.glb"
+  source2 = "./assets/firulais/firulais1.usdz"
+}else if(codigo == "reina"){
+  source = "./assets/kira/kira1.glb"
+  source2 = "./assets/kira/kira1.usdz"
+}else if(codigo == "manchas"){
+  source = "./assets/bruno/bruno1.glb"
+  source2 = "./assets/bruno/bruno1.usdz"
+}else if(codigo == "bruno"){
+  source = "./assets/manchas/manchasp2.glb"
+  source2 = "./assets/manchas/manchasp2.usdz"
+}else if(codigo == "dracula"){
+  source = "./assets/botas/botas.glb"
+  source2 = "./assets/botas/botas.usdz"
 }
 
 imagen = "./assets/provisional.png"
@@ -95,10 +113,7 @@ const imageStyle = {
 };
 
 
-  return ((valtipo != 1)?(<div style={containerStyle}>
-    <img src={imagen} alt="Muy Pronto en Chivería" style={imageStyle} />
-  </div>):
-    (<div className="App">
+  return (<div className="App">
 <model-viewer src={source} ios-src={source2} camera-controls camera-orbit="-40deg 70deg 200m" camera-target="0 0 0" ar ar-modes="scene-viewer webxr quick-look" xr-environment ar-placement="wall" autoplay>
 
         <SoundButton
@@ -113,11 +128,8 @@ const imageStyle = {
         <Boton slot="ar-button" >
           Click Aquí
         </Boton>
-
-
-        
   </model-viewer>
-    </div>)
+    </div>
   )
 }
 
