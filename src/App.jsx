@@ -31,8 +31,8 @@ if(codigo == "manolo"){
   source = "./assets/batman/batmanandroid1.glb"
   source2 = "./assets/batman/batmanios1.usdz"
 }else if(codigo == "chiverito"){
-  source = "./assets/golden/golden1.glb"
-  source2 = "./assets/golden/golden1.usdz"
+  source = "./assets/golden/golden2.glb"
+  source2 = "./assets/golden/golden2.usdz"
 }else if(codigo == "marley"){
   source = "./assets/peluza/peluza.glb"
   source2 = "./assets/peluza/peluza.usdz"
