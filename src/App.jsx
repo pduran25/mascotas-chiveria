@@ -70,8 +70,8 @@ if(codigo == "manolo"){
   source = "./assets/coco/coco.glb"
   source2 = "./assets/coco/coco.usdz"
 }else if(codigo == "batman"){
-  source = "./assets/firulais/firulais1.glb"
-  source2 = "./assets/firulais/firulais1.usdz"
+  source = "./assets/firulais/firulais2.glb"
+  source2 = "./assets/firulais/firulais2.usdz"
 }else if(codigo == "reina"){
   source = "./assets/kira/kira1.glb"
   source2 = "./assets/kira/kira1.usdz"
