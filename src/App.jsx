@@ -55,8 +55,8 @@ if(codigo == "manolo"){
   source = "./assets/barbie/barbie.glb"
   source2 = "./assets/barbie/barbie.usdz"
 }else if(codigo == "kira"){
-  source = "./assets/reina/reina.glb"
-  source2 = "./assets/reina/reina.usdz"
+  source = "./assets/reina/reinan3.glb"
+  source2 = "./assets/reina/reinan3.usdz"
 }else if(codigo == "mila"){
   source = "./assets/nina/nina.glb"
   source2 = "./assets/nina/nina.usdz"
@@ -73,8 +73,8 @@ if(codigo == "manolo"){
   source = "./assets/firulais/firulais2.glb"
   source2 = "./assets/firulais/firulais2.usdz"
 }else if(codigo == "reina"){
-  source = "./assets/kira/kira1.glb"
-  source2 = "./assets/kira/kira1.usdz"
+  source = "./assets/kira/kiran2.glb"
+  source2 = "./assets/kira/kiran2.usdz"
 }else if(codigo == "manchas"){
   source = "./assets/bruno/bruno1.glb"
   source2 = "./assets/bruno/bruno1.usdz"
