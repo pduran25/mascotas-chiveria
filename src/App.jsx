@@ -79,8 +79,8 @@ if(codigo == "manolo"){
   source = "./assets/bruno/bruno1.glb"
   source2 = "./assets/bruno/bruno1.usdz"
 }else if(codigo == "bruno"){
-  source = "./assets/manchas/manchasn2.glb"
-  source2 = "./assets/manchas/manchan2.usdz"
+  source = "./assets/manchas/manchasn4.glb"
+  source2 = "./assets/manchas/manchasn4.usdz"
 }else if(codigo == "dracula"){
   source = "./assets/botas/botas.glb"
   source2 = "./assets/botas/botas.usdz"
