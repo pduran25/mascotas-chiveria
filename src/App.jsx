@@ -34,8 +34,8 @@ if(codigo == "manolo"){
   source = "./assets/golden/golden2.glb"
   source2 = "./assets/golden/golden2.usdz"
 }else if(codigo == "marley"){
-  source = "./assets/peluza/peluza.glb"
-  source2 = "./assets/peluza/peluza.usdz"
+  source = "./assets/peluza/peluzan2.glb"
+  source2 = "./assets/peluza/peluzan2.usdz"
 }else if(codigo == "dulce"){
   source = "./assets/simba/simba.glb"
   source2 = "./assets/simba/simba.usdz"
@@ -70,8 +70,8 @@ if(codigo == "manolo"){
   source = "./assets/coco/coco.glb"
   source2 = "./assets/coco/coco.usdz"
 }else if(codigo == "batman"){
-  source = "./assets/firulais/firulais2.glb"
-  source2 = "./assets/firulais/firulais2.usdz"
+  source = "./assets/firulais/firulaisn2.glb"
+  source2 = "./assets/firulais/firulaisn2.usdz"
 }else if(codigo == "reina"){
   source = "./assets/kira/kiran2.glb"
   source2 = "./assets/kira/kiran2.usdz"
@@ -79,8 +79,8 @@ if(codigo == "manolo"){
   source = "./assets/bruno/bruno1.glb"
   source2 = "./assets/bruno/bruno1.usdz"
 }else if(codigo == "bruno"){
-  source = "./assets/manchas/manchas2.glb"
-  source2 = "./assets/manchas/manchas2.usdz"
+  source = "./assets/manchas/manchasn2.glb"
+  source2 = "./assets/manchas/manchan2.usdz"
 }else if(codigo == "dracula"){
   source = "./assets/botas/botas.glb"
   source2 = "./assets/botas/botas.usdz"
