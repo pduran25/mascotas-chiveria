@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import sound from './assets/chiverito.mp3';
-import  {useEffect,  useState} from 'react';
+import  {useState} from 'react';
 
 
 import './App.css'
