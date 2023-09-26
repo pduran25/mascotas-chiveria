@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import sound from './assets/chiverito.mp3';
-import  { useState} from 'react';
+import  {useEffect,  useState} from 'react';
 
 
 import './App.css'
@@ -14,6 +14,8 @@ function App() {
   console.log("mascota numero: "+codigo);
   var source = "";
   var source2 = "";
+  //const [sourcea, setSourcea] = useState("./assets/chiverito/chivp3.glb"); //codigo adicional
+  //const [source2a, setSource2a] = useState("./assets/chiverito/chivp3.usdz"); //codigo adicional
   var imagen = "";
   const [isAudioPlaying, setIsAudioPlaying] = useState(false);
 
@@ -99,6 +101,17 @@ const toggleAudio = () => {
 
   setIsAudioPlaying(!isAudioPlaying);
 };
+
+/*useEffect(() => {
+  const timer = setTimeout(() => {
+    // Cambiar la fuente del modelo 3D después de 30 segundos
+    console.log("cambio el objeto");
+    setSourcea("./assets/batman/batmanandroid1.glb");
+    setSource2a("./assets/batman/batmanios1.usdz");
+  }, 10000); // 30000 milisegundos = 30 segundos
+
+  return () => clearTimeout(timer); // Limpiar el temporizador al desmontar el componente
+}, []);*/
 
 const containerStyle = {
   display: 'flex',
