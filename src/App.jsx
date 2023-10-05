@@ -54,8 +54,8 @@ if(codigo == "manolo"){
   source = "./assets/dante/dante.glb"
   source2 = "./assets/dante/dante.usdz"
 }else if(codigo == "lulu"){
-  source = "./assets/barbie/barbien2.glb"
-  source2 = "./assets/barbie/barbien2.usdz"
+  source = "./assets/barbie/barbienn2.glb"
+  source2 = "./assets/barbie/barbienn2.usdz"
 }else if(codigo == "kira"){
   source = "./assets/reina/reinan4.glb"
   source2 = "./assets/reina/reinan4.usdz"
