@@ -45,8 +45,8 @@ if(codigo == "manolo"){
   source = "./assets/marley/marleyn1.glb"
   source2 = "./assets/marley/marleyn1.usdz"
 }else if(codigo == "botas"){
-  source = "./assets/dracula/dracula.glb"
-  source2 = "./assets/dracula/dracula.usdz"
+  source = "./assets/dracula/dracula1.glb"
+  source2 = "./assets/dracula/dracula1.usdz"
 }else if(codigo == "simba"){
   source = "./assets/dulce/dulcen2.glb"
   source2 = "./assets/dulce/dulcen2.usdz"
