@@ -69,8 +69,8 @@ if(codigo == "manolo"){
   source = "./assets/lulu/lulu10.glb"
   source2 = "./assets/lulu/lulu10.usdz"
 }else if(codigo == "dante"){
-  source = "./assets/coco/coco.glb"
-  source2 = "./assets/coco/coco.usdz"
+  source = "./assets/coco/coco1.glb"
+  source2 = "./assets/coco/coco1.usdz"
 }else if(codigo == "batman"){
   source = "./assets/firulais/firulaisn2.glb"
   source2 = "./assets/firulais/firulaisn2.usdz"
